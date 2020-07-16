@@ -10,7 +10,9 @@ The following is information regarding the model implemented in Netlogo, the cod
 
 ## HOW TO ACCESS THE MODEL? 
 
-You can open a web version of the model by opening abm-web-version.html in your browser. Or you can access open it directly in dropbox as Github at the moment doesn't display large html files. The dropbox link is: https://www.dropbox.com/s/4v42tov9alic6cv/abm-web-version.html?dl=0
+You can open a web version of the model by opening abm-web-version.html in your browser at: https://github.com/diodz/abm-school-choice/blob/master/abm-web-version.html. 
+
+Or you can access open it directly in dropbox as Github at the moment doesn't display large html files. The dropbox link is: https://www.dropbox.com/s/4v42tov9alic6cv/abm-web-version.html?dl=0
 
 ## WHAT IS IT?
 
