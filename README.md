@@ -36,7 +36,7 @@ The important mechanic is the school selection process, which is implemented in 
 
 Attending public schools also has a cost, which is a transportation cost that agents may be able to afford depending on their income.
 
-With traffic-lights? on, low income students know the signal of achievement of schools provided by the government, represented by the color of the school. Assuming they care about achievement, since the signal can only have 3 values, their choice still won’t be as optimal as high-income students.
+With the traffic-lights policy activated, low income students see a signal of achievement of schools, represented visually by the color of the school. Assuming they care about achievement, their choice still won’t be as optimal as high-income students since the latter has perfect knowledge of achievement.
 
 ## HOW TO CITE
 
