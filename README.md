@@ -12,7 +12,7 @@ The following is information regarding the model implemented in Netlogo, the cod
 
 ## HOW TO ACCESS THE MODEL? 
 
-You can open a web version of the model by opening abm-web-version.html in your browser at: https://github.com/diodz/abm-school-choice/blob/master/abm-web-version.html. 
+You can open a web version of the model by opening abm-web-version.html in your browser at: https://drive.google.com/file/d/1usn-23EBkXI8d9H7aivZm-Zzd6IG5smM/view?usp=sharing. Alternatively, execute get_html_model.sh to auto download.
 
 Alternatively you can open the Netlogo code in Netlogo in your desktop or in the Netlogo website at: http://netlogoweb.org/launch#Load
 
