@@ -1,7 +1,9 @@
-# abm-school-choice
-### An agent-based model of school choice with information asymmetries
+# An agent-based model of school choice with information asymmetries
 
-This is the code for the agent-based model published in the paper published in the journal of simulation: 
+This is the code for the agent-based model published in the paper published in the journal of simulation. 
+
+Citation:
+
 Diego A. Díaz, Ana María Jiménez & Cristián Larroulet (2019) An agent-based model of school choice with information asymmetries, Journal of Simulation, DOI: 10.1080/17477778.2019.1679674
 
 Access the paper in the following link: https://www.tandfonline.com/doi/full/10.1080/17477778.2019.1679674
