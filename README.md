@@ -12,13 +12,13 @@ The following is information regarding the model implemented in Netlogo, the cod
 
 ## HOW TO ACCESS THE MODEL? 
 
-You can open a web version of the model by opening abm-web-version.html in your browser at: https://drive.google.com/file/d/1usn-23EBkXI8d9H7aivZm-Zzd6IG5smM/view?usp=sharing. Alternatively, execute get_html_model.sh to auto download.
+You can open the Netlogo file in your Netlogo environment in your desktop or in the Netlogo website at: http://netlogoweb.org/launch#Load
 
-Alternatively you can open the Netlogo code in Netlogo in your desktop or in the Netlogo website at: http://netlogoweb.org/launch#Load
+Alternatively you can open an html version of the model by opening the following file in your browser: https://drive.google.com/file/d/1usn-23EBkXI8d9H7aivZm-Zzd6IG5smM/view?usp=sharing. You can also execute get_html_model.sh to auto download.
 
 ## WHAT IS IT?
 
-The model implements a school selection model that allows to study the effects of school choice and a policy implemented in Chile in 2010 known as traffic lights, in which a discrete signal of school achievement was given to families so they would make a better decision. It is submitted as supplemental material with the paper: An agent-based model of school choice with information asymmetries, submitted to the Journal of Simulation.
+The model implements a school selection model that allows to study the effects of school choice and a policy implemented in Chile in 2010 known as traffic lights, in which a discrete signal of school achievement was given to families so they would pick higher achievement schools. The code is published as supplemental material with the paper: An agent-based model of school choice with information asymmetries, published in the Journal of Simulation.
 
 ## HOW IT WORKS
 
