@@ -1,7 +1,9 @@
-# abm-school-choice
-### An agent-based model of school choice with information asymmetries
+# An agent-based model of school choice with information asymmetries
 
-This is the code for the agent-based model published in the paper published in the journal of simulation: 
+This is the code for the agent-based model published in the paper published in the journal of simulation. 
+
+Citation:
+
 Diego A. Díaz, Ana María Jiménez & Cristián Larroulet (2019) An agent-based model of school choice with information asymmetries, Journal of Simulation, DOI: 10.1080/17477778.2019.1679674
 
 Access the paper in the following link: https://www.tandfonline.com/doi/full/10.1080/17477778.2019.1679674
@@ -10,7 +12,7 @@ The following is information regarding the model implemented in Netlogo, the cod
 
 ## HOW TO ACCESS THE MODEL? 
 
-You can open a web version of the model by opening abm-web-version.html in your browser at: https://github.com/diodz/abm-school-choice/blob/master/abm-web-version.html. 
+You can open a web version of the model by opening abm-web-version.html in your browser at: https://drive.google.com/file/d/1usn-23EBkXI8d9H7aivZm-Zzd6IG5smM/view?usp=sharing. Alternatively, execute get_html_model.sh to auto download.
 
 Alternatively you can open the Netlogo code in Netlogo in your desktop or in the Netlogo website at: http://netlogoweb.org/launch#Load
 
@@ -34,7 +36,7 @@ The important mechanic is the school selection process, which is implemented in 
 
 Attending public schools also has a cost, which is a transportation cost that agents may be able to afford depending on their income.
 
-With traffic-lights? on, low income students know the signal of achievement of schools provided by the government, represented by the color of the school. Assuming they care about achievement, since the signal can only have 3 values, their choice still won’t be as optimal as high-income students.
+With the traffic-lights policy activated, low income students see a signal of achievement of schools, represented visually by the color of the school. Assuming they care about achievement, their choice still won’t be as optimal as high-income students since the latter has perfect knowledge of achievement.
 
 ## HOW TO CITE
 
