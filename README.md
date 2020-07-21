@@ -6,15 +6,15 @@ Citation:
 
 Diego A. Díaz, Ana María Jiménez & Cristián Larroulet (2019) An agent-based model of school choice with information asymmetries, Journal of Simulation, DOI: 10.1080/17477778.2019.1679674
 
-Access the paper in the following link: https://www.tandfonline.com/doi/full/10.1080/17477778.2019.1679674
+Access the paper [here](https://www.tandfonline.com/doi/full/10.1080/17477778.2019.1679674).
 
 The following is information regarding the model implemented in Netlogo, the code which can be accessed in the netlogo folder. 
 
 ## HOW TO ACCESS THE MODEL? 
 
-You can open the Netlogo file in your Netlogo environment in your desktop or in the Netlogo website at: http://netlogoweb.org/launch#Load
+You can open the [Netlogo file](https://github.com/diodz/abm-school-choice/blob/master/netlogo/abm_school_choice.nlogo) in your Netlogo environment in your desktop or in the [Netlogo website](http://netlogoweb.org/launch#Load).
 
-Alternatively you can open an html version of the model by opening the following file in your browser: https://drive.google.com/file/d/1usn-23EBkXI8d9H7aivZm-Zzd6IG5smM/view?usp=sharing. You can also execute get_html_model.sh to auto download.
+Alternatively you can open an html version of the model by opening the following [file in your browser] https://drive.google.com/file/d/1usn-23EBkXI8d9H7aivZm-Zzd6IG5smM/view?usp=sharing. You can also execute get_html_model.sh to auto download.
 
 ## WHAT IS IT?
 
