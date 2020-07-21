@@ -1,12 +1,12 @@
 # An agent-based model of school choice with information asymmetries
 
-This is the code for the agent-based model of the paper. 
+This is the code for the agent-based model of the article. 
 
 Citation:
 
 Diego A. Díaz, Ana María Jiménez & Cristián Larroulet (2019) An agent-based model of school choice with information asymmetries, Journal of Simulation, DOI: 10.1080/17477778.2019.1679674
 
-Access the paper [here](https://www.tandfonline.com/doi/full/10.1080/17477778.2019.1679674).
+Access the article [here](https://www.tandfonline.com/doi/full/10.1080/17477778.2019.1679674).
 
 The following is information regarding the model implemented in Netlogo, the code which can be accessed in the netlogo folder. 
 
