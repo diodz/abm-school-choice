@@ -1,6 +1,6 @@
 # An agent-based model of school choice with information asymmetries
 
-This is the code for the agent-based model published in the paper published in the journal of simulation. 
+This is the code for the agent-based model of the paper. 
 
 Citation:
 
