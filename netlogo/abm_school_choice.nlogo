@@ -6,7 +6,7 @@ globals [
 
 breed [students student]
 breed [schools school]
-students-own [target enrolled? income years-in-school school-achievement]   ; school-achievement is only put here for obtaining the model output easier
+students-own [target enrolled? income years-in-school school-achievement]
 schools-own [enrollment achievement traffic-lights-color is-private?]
 
 to setup
@@ -20,8 +20,13 @@ to setup
   set high-income-cutoff (pareto-distribution-minimum / (high-income-percentage / 100) ^ (1 / pareto-distribution-alpha))
 
   create-schools number-of-schools
-  [set color yellow                                     ;; default color is yellow
-   set traffic-lights-color 5                           ;; for discrete choice with the policy implemented, default will be 1. The procedure paint-school will change it when necessary
+
+  ;default color of schools is yellow
+  ;for discrete choice when the policy implemented, default is 1
+  ;The procedure paint-school will changes it when necessary
+
+  [set color yellow
+   set traffic-lights-color 5
    fd max-pxcor
    setxy random-xcor random-ycor
    set achievement random-normal 5 1
@@ -45,7 +50,7 @@ to setup
 end
 
 to go
-  call-new-students                                     ;; creates new students, which are 10% that of the initial students selected by the user
+  call-new-students
   ask students [
     choose-school
     study-a-year
@@ -58,21 +63,25 @@ to go
 end
 
 to choose-school
-      ifelse (income > high-income-cutoff and with-school-choice?)                            ;; if school choice is allowed and income is high, students consider achievement when choosing
+  ;if school choice is allowed and income is high, students consider achievement when choosing
+  ;agents choose school that maximizes utility
+      ifelse (income > high-income-cutoff and with-school-choice?)
     [
   set target one-of schools with [[income] of myself - (distance myself) * school-transportation-cost / 100 > 0] with-max [(achievement ^ alpha) *
-     (((world-height * sqrt 2) - distance myself) / (world-height * sqrt 2)) ^ (1 - alpha) ]  ;; choose school that maximizes the student's utility (Maroulis et al 2010)
+     (((world-height * sqrt 2) - distance myself) / (world-height * sqrt 2)) ^ (1 - alpha) ]
     ]
     [
-    ifelse (with-school-choice? and traffic-lights?) [                                        ;; if traffic-lights policy is on, low income agents get the color signal and maximize the same utility
-                                                                                              ;; function with discrete values. Policy only works if the agents have school-choice available
+    ifelse (with-school-choice? and traffic-lights?) [
+      ;if traffic-lights policy is on, low income agents get the color signal and maximize the same utility
+      ;function with discrete values. The policy only works if the agents have school-choice available
      set target min-one-of schools with [[income] of myself - (distance myself) * school-transportation-cost / 100 > 0 and is-private? = FALSE]
       with-max [(traffic-lights-color ^ alpha) *
         (((world-height * sqrt 2) - distance myself) / (world-height * sqrt 2)) ^ (1 - alpha) ] [distance myself] ]
 
     [ifelse (with-school-choice?)
       [set target min-one-of schools
-      with [[income] of myself - (distance myself) * school-transportation-cost / 100 > 0 and is-private? = FALSE] [distance myself] ]   ;; when failing one of the conditions from above, choose the closest school if affordable
+      with [[income] of myself - (distance myself) * school-transportation-cost / 100 > 0 and is-private? = FALSE] [distance myself] ]
+      ;when failing one of the conditions from above, choose the closest school if affordable
       [set target min-one-of schools
       with [[income] of myself - (distance myself) * school-transportation-cost / 100 > 0] [distance myself] ]
   ]]
@@ -85,6 +94,8 @@ to choose-school
 end
 
 to call-new-students
+;creates new students, which are 10% that of the initial students selected by the user
+
     create-students initial-students * 0.1 [
     set color gray
     setxy random-xcor random-ycor
@@ -107,9 +118,9 @@ end
 to paint-school
   ask schools [
   ifelse achievement > 6 [set color green
-    set traffic-lights-color 6]                  ;; we raise the value to 1.5 if high achievement
+    set traffic-lights-color 6]
     [if achievement < 4 [set color red
-    set traffic-lights-color 4]]                 ;; we lower the value to 0.5 if low achievement
+    set traffic-lights-color 4]]
 
   ]
 
@@ -137,10 +148,10 @@ end
 ; Cite as: Diego A. Díaz, Ana María Jiménez & Cristián Larroulet (2019) An agent-based model of school choice with information asymmetries, Journal of Simulation, DOI: 10.1080/17477778.2019.1679674
 @#$#@#$#@
 GRAPHICS-WINDOW
-177
+179
 10
-1047
-881
+1048
+880
 -1
 -1
 16.91
@@ -221,7 +232,7 @@ number-of-schools
 number-of-schools
 5
 500
-200.0
+100.0
 5
 1
 NIL
